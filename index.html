@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>James Acree | Projects & Research</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="James Acree — student-athlete, researcher, and founder building Tactical Thermals and Common Pitch." />
+  <style>
+    :root {
+      --bg: #050814;
+      --card: #0d1020;
+      --accent: #2c7df6;
+      --text: #f7f7fb;
+      --muted: #a0a4b8;
+      --radius: 16px;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, -webkit-system-font, -system-font, -apple-system, BlinkMacSystemFont, "SF Pro Text", -sans-serif;
+      background: radial-gradient(circle at top, #151a33, var(--bg));
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+    .wrap {
+      width: 100%;
+      max-width: 720px;
+      background: rgba(5, 8, 20, 0.9);
+      border-radius: var(--radius);
+      padding: 28px 24px 22px;
+      box-shadow: 0 18px 60px rgba(0,0,0,0.6);
+      border: 1px solid rgba(255,255,255,0.06);
+      backdrop-filter: blur(14px);
+    }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      color: var(--muted);
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      margin-bottom: 10px;
+    }
+    .logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      background: #0b1430;
+      border: 1px solid rgba(255,255,255,0.14);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      margin-right: 10px;
+    }
+    .top {
+      display: flex;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 650;
+      letter-spacing: 0.01em;
+    }
+    .subtitle {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+    .blurb {
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--text);
+      margin-bottom: 18px;
+    }
+    .links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .link-card {
+      padding: 9px 10px;
+      border-radius: 12px;
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.06);
+      font-size: 11px;
+      line-height: 1.4;
+      color: var(--muted);
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.18s ease;
+    }
+    .link-card span.label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 2px;
+    }
+    .link-card:hover {
+      transform: translateY(-1px);
+      border-color: var(--accent);
+      box-shadow: 0 8px 26px rgba(0,0,0,0.6);
+      color: var(--text);
+    }
+    .small {
+      font-size: 10px;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+    @media (max-width: 540px) {
+      .wrap {
+        padding: 22px 16px 18px;
+      }
+      .links {
+        grid-template-columns: 1fr;
+      }
+      .top { align-items: center; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="tag">James Acree · Projects & Research</div>
+    <div class="top">
+      <div class="logo">JAA3</div>
+      <div>
+        <h1>Building in public.</h1>
+        <div class="subtitle">Student-athlete, researcher & founder exploring how environment, data & discipline shape modern sport.</div>
+      </div>
+    </div>
+
+    <p class="blurb">
+      This GitHub space hosts my technical work — including
+      <strong>Tactical Thermals</strong>, a research project on how heat, altitude, and air quality disrupt tactics and performance in elite football, and the code, data, and experiments that follow.
+    </p>
+
+    <section class="links">
+      <a class="link-card" href="https://github.com/jamesacree/TacticalThermals" target="_blank" rel="noopener">
+        <span class="label">Tactical Thermals Repo ↗</span>
+        MIT Sloan 2026 abstract, expert feedback, and future models.
+      </a>
+
+      <a class="link-card" href="https://github.com/jamesacree" target="_blank" rel="noopener">
+        <span class="label">GitHub Profile ↗</span>
+        All public projects, experiments, and contributions.
+      </a>
+
+      <a class="link-card" href="https://jamesacree.com" target="_blank" rel="noopener">
+        <span class="label">jamesacree.com ↗</span>
+        Full bio, journey so far, and what I’m building.
+      </a>
+
+      <a class="link-card" href="https://tacticalthermals.com" target="_blank" rel="noopener">
+        <span class="label">tacticalthermals.com ↗</span>
+        The broader Tactical Thermals project & platform.
+      </a>
+    </section>
+
+    <div class="small">
+      For opportunities, questions, or collaboration, contact
+      <a href="mailto:j@jamesacree.com" style="color: var(--accent); text-decoration: none;">j@jamesacree.com</a>.
+    </div>
+  </main>
+</body>
+</html>
